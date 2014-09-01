@@ -2,11 +2,13 @@
     background-color: #700b0b;
     font-weight: bold;
     color: #ffffff;
-    font-size: 26px; 
+    font-size: 26px;
+    padding: 8px;
 }
 body {
     color: #404040;
     font-size: 14px;
+    margin: 0;
 }
 
 main {
@@ -29,9 +31,16 @@ h3 {
     font-weight: bold;
 } 
 
+article {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 1px, color #404040;
+}
+
 footer {
     color: #FFFFFF;
     background-color: #404040;
+    padding: 8px;
 }
 
 * {
@@ -42,7 +51,12 @@ footer {
     height: 60px;
 }
 
-img src {
+.editor {
+    height: 85px;
+    width: 108px;
+}
+
+.images {
     height: 278px;
-    width: 320px;
+    width: 370px;
 }
