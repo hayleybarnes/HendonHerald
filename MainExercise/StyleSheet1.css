@@ -1,0 +1,39 @@
+﻿header {
+    background-color: #700b0b;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 26px; 
+}
+body {
+    color: #404040;
+    font-size: 14px;
+}
+
+main {
+    background-color: #F2F2F2;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    background-color: #700b0b;
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
+} 
+
+footer {
+    color: #FFFFFF;
+    background-color: #404040;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    height: 60px
+
+}
+
+
