@@ -59,7 +59,7 @@
   <ItemGroup>
     <Content Include="HendonHeraldStylesheet.css" />
     <Content Include="index.html" />
-    <Content Include="StyleSheet1.css" />
+    <Content Include="HendonHerald.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
