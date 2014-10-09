@@ -5,111 +5,206 @@
 
         <title> The Hendon Herald-Sunderland Premier News Sauce</title>
         <link href="images\favicon.ico" rel="icon" type="image/x-icon"/>
+        <link href="flexslider.css" rel="stylesheet">
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
     </head>
 
     <body>
         <div id="contentContainer">
-        <header>
-            <img id="logo" src="images\heraldlogo.png" alt="logo" >
-            <h1> The Hendon Herald </h1>
-            <nav>
-                <ul>
-                    <li id="NoBorder">
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Local</a>
-                    </li>
-                    <li>
-                        <a href="#">Sport</a>
-                    </li>
-                    <li>
-                        <a href="#">Stuff</a>
-                    </li>
-                </ul> 
-            </nav>
+            <header>
+                <img id="logo" src="images\heraldlogo.png" alt="logo" >
+                <h1> The Hendon Herald </h1>
+                <nav>
+                    <ul>
+                        <li id="NoBorder">
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="#">Local</a>
+                        </li>
+                        <li>
+                            <a href="#">Sport</a>
+                        </li>
+                        <li>
+                            <a href="#">Stuff</a>
+                        </li>
+                    </ul> 
+                </nav>
 
-        </header>
+            </header>
 
-        <aside>
-            <h3> Pointlessness League</h3>
-            <table>
-                <tr>
-                    <th id="club"> Club </th>
-                    <th id="points"> Points </th>
-                </tr>
-                <tr>
-                    <td> IDEF </td>
-                    <td> 100 </td>
-                </tr>
-                <tr>
-                    <td> LOGE </td>
-                    <td> 99 </td>
-                </tr>
-                <tr>
-                    <td> OLLL </td>
-                    <td> 99 </td>
-                </tr>
-                <tr>
-                    <td> LOGE </td>
-                    <td> 90 </td>
-                </tr>
-                <tr>
-                    <td> ISSO </td>
-                    <td> 70 </td>
-                </tr>
-                <tr>
-                    <td> EBGG </td>
-                    <td> 55 </td>
-                </tr>
-                <tr>
-                    <td> COIK </td>
-                    <td> 32 </td>
-                </tr>
+            <aside>
+                <section class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <figure>
+                                <img src="images/Confusing Building.jpg" alt="Confusing Building" id="confusingbuilding">
+                                <figcaption>"What is it? I don't know"</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img alt="A Level Results" id="alevelresults" src="images/A Level.jpg">
+                                <figcaption>"Yet more leaping 18 year olds"</figcaption>
+                        
+                        </li>
 
-            </table>
-        </aside>
+                        <li>
+                            <figure>
+                                <img alt="Wrong Hendon" id="wronghendon" src="images/Wong Hendon Found.jpg">
+                                <figcaption>Turns out it's full of busies</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
 
-        <main>
-            <article>
-                <h2> Spectral Figure Found In Mowbray Park </h2> 
-                <img id="images" src="images\Spectral Figure Discovered in Mowbray park.jpg" alt="MowbrayPark" /><div>
+                </section>
+                <h3> Pointlessness League</h3>
+                <table>
+                    <tr>
+                        <th id="club"> Club </th>
+                        <th id="points"> Points </th>
+                    </tr>
+                    <tr>
+                        <td> IDEF </td>
+                        <td> 100 </td>
+                    </tr>
+                    <tr>
+                        <td> LOGE </td>
+                        <td> 99 </td>
+                    </tr>
+                    <tr>
+                        <td> OLLL </td>
+                        <td> 99 </td>
+                    </tr>
+                    <tr>
+                        <td> LOGE </td>
+                        <td> 90 </td>
+                    </tr>
+                    <tr>
+                        <td> ISSO </td>
+                        <td> 70 </td>
+                    </tr>
+                    <tr>
+                        <td> EBGG </td>
+                        <td> 55 </td>
+                    </tr>
+                    <tr>
+                        <td> COIK </td>
+                        <td> 32 </td>
+                    </tr>
+
+                </table>
+
+                <form name="inputForm" onsubmit="validateForm()">
+                    <h3>Contact Us</h3>
+                    Your Email:
+                    <input type="email" name="email" id="email" /><br>
+                    Your Message:
+                    <textarea type="text" name="message" id="message"></textarea>
+                    <button onclick="submitContact()">Submit</button>
+                </form>
+          
+            </aside>
+
+            <main>
+                <article>
+                
+                    <h2> Spectral Figure Found In Mowbray Park </h2> 
+                    <img id="park" src="images\Spectral Figure Discovered in Mowbray park.jpg" alt="MowbrayPark" /><div >
                     <h3> Spirit Eyes Cannon </h3>
-                    <p>The Ghost of General Havlock appears to be considering using the canon left in Mowbray park - in protest at moving his bin collection to Tuesdays instead of Thursday.</p>
-                    <p>The cannon, left pointing at the civic centre in case of another infestation of the Rage virus seems to be the target of the Victorian Millitaryman Shade's attentions.</p>
-                    <p>When pressed, the wraith said "I'm buried at Lucknow, so getting here to put the bins out for Tuesday is impossible, the connecting flights just aren't there.</p>
-                    <p>Queen Victoria, Greyfriars Bobby and Sunderland City council were unavailable for comment.</p>
+                        <p>The Ghost of General Havlock appears to be considering using the canon left in Mowbray park - in protest at moving his bin collection to Tuesdays instead of Thursday.</p>
+                        <p>The cannon, left pointing at the civic centre in case of another infestation of the Rage virus seems to be the target of the Victorian Millitaryman Shade's attentions.</p>
+                        <p>When pressed, the wraith said "I'm buried at Lucknow, so getting here to put the bins out for Tuesday is impossible, the connecting flights just aren't there.</p>
+                        <p>Queen Victoria, Greyfriars Bobby and Sunderland City council were unavailable for comment.</p>
+                    </div>
+                </article>
+                <hr>
+                <article>
+                    <img id="images" src="images\CrookedBlandfordStreet.jpg" alt="FordStreet"/><div>
+                    <h3> Blandford Street found Wonky</h3>       
+                        <p>Keen shoppers were underterred as Blandford Street at the heart of the city was seen to be a bit skew-wiff.From Herbet Brown's to Debenhams, the whole street appeared tilted off to the rught somehow.</p>
+                        <p>We contacted a spokesperson for H&T Pawnbrokers said "To be honest, we haven't noticed anything unusal outside. There has been no drop off in trade, punters are here putting their wedding rings on tick just a desperately as usual."</p>
+                        <p>Our roving photohrapher, Nathanial Ventricle, took this shocking image moments after picking up his new tripod form Chas Eagle's and Sons. Nathanial said "You know what's odd, the people on Blandford Street look wonky too- normally they'd be upri..oh.wait.."</p>
                 </div>
-            </article>
-            <hr>
-            <article>
-                <img id="images" src="images\CrookedBlandfordStreet.jpg" alt="FordStreet"/><div>
-                <h3> Blandford Street found Wonky</h3>       
-                <p>Keen shoppers were underterred as Blandford Street at the heart of the city was seen to be a bit skew-wiff.From Herbet Brown's to Debenhams, the whole street appeared tilted off to the rught somehow.</p>
-                <p>We contacted a spokesperson for H&T Pawnbrokers said "To be honest, we haven't noticed anything unusal outside. There has been no drop off in trade, punters are here putting their wedding rings on tick just a desperately as usual."</p>
-                <p>Our roving photohrapher, Nathanial Ventricle, took this shocking image moments after picking up his new tripod form Chas Eagle's and Sons. Nathanial said "You know what's odd, the people on Blandford Street look wonky too- normally they'd be upri..oh.wait.."</p>
-                </div>
-            </article>
-            <hr>
-            <article>
-                <img id="images" src="images\AmysWinehouse.jpg" alt="FordStreet"><div>
-                <h3> Amy Winehouse Urged into Rehab</h3>
-                <p>Amy's Winehouse has said "no no no" to calls to enter rehab after complaints of rowdy behaviour about the songstressly-named offy. An neighbour, who wishes to remain anonymous, has seen Amy's Winehouse selling the following in broad daylight:
+                </article>
+                <hr>
+                <article>
+                    <img id="images" src="images\AmysWinehouse.jpg" alt="FordStreet"><div>
+                    <h3> Amy Winehouse Urged into Rehab</h3>
+                    <p>Amy's Winehouse has said "no no no" to calls to enter rehab after complaints of rowdy behaviour about the songstressly-named offy. An neighbour, who wishes to remain anonymous, has seen Amy's Winehouse selling the following in broad daylight:
                     <ul>
                         <li> Fine Wines & Champagnes</li>
-                        <li> Rough Ciders & Spirits</li>
+                        <li> Rough Ciders & Spirits</li>                                     
                         <li> Terry Chocolate Orange</li>
                     </ul>
-               <p>Amy's Winehouse ain't got the time to make a comment, adding the retail outlet's daddy thinks she's fine.</p>
-            </div>
-           </article> 
-        </main>
-        <footer>
-            <img id="editor" src="images\Our Editor.jpg" alt="FordStreet">
-            <p><strong>About our Editor:</strong></p> 
+                    <p>Amy's Winehouse ain't got the time to make a comment, adding the retail outlet's daddy thinks she's fine.</p>
+                 </div>
+             </article> 
+            </main>
+            <footer>
+                <img id="editor" src="images\Our Editor.jpg" alt="FordStreet">
+                <p><strong>About our Editor:</strong></p> 
                 <p>Our cheif editor, Ahab McRadgie has had a long career in the media, despite his youth. Starting off taxing dafties for 20p, who he assured he needed the money to get home to his dying grandmother. He soon set to work selling the Big Issue, then graduated on to harder, more potent local newspapers. Ahab has been given a Regional Press Award for his scoop "Ryhope man catches train" and a restraining order after the incident with the inflatible crocodile, the vodka and small arms we don't talk about, but none one will ever forget. Even though we tried hard. So, so hard.</p>
-            <div id="copyright">Copyright 2014, Hendon Herald.</div>
-        </footer>
-       </div>
+                <div id="copyright">Copyright 2014, Hendon Herald.</div>
+            </footer>
+        </div>
+        <script>
+            $(window).load(function () { $('.flexslider').flexslider({ animation: "slide", easing: "swing" }); });
+            function validateForm() {
+                var email = document.forms["inputForm"]["email"].value;
+                var message = document.forms["inputForm"]["message"].value;
+
+
+                if (email == null || email == "") {
+                    var email = document.getElementById("email");
+                    email.classList.add("error");
+                    window.setInterval(function () {
+                        email.classList.remove("error")
+                    }, 3000)
+
+                    return false;
+                }
+
+                if (message == null || message == "") {
+                    var message = document.getElementById("message");
+                    message.classList.add("error");
+                    window.setInterval(function () {
+                        message.classList.remove("error")
+                    }, 3000)
+                    return false;
+                }
+            }
+
+
+                var submitContact = function () {
+                    
+                    var xmlhttp = new XMLHttpRequest();
+                    {
+                        xmlhttp.onreadystatechange = function () {
+                            var response = xmlhttp.response;
+
+                            if (xmlhttp.readyState !== 4) { return; }
+
+                            if (xmlhttp.status === 200) {
+                                alert(response.message);
+                            }
+
+                            if (xmlhttp.status === 422) {
+                                alert(response.message);
+
+                            }
+                        }
+                    }
+                
+                    xmlhttp.open("POST", "http://localhost:3000/api/submit?email=" + document.getElementById("email").value + "&message=" + document.getElementById("message").value, true);
+
+                    xmlhttp.responseType = "json";
+
+
+                    xmlhttp.send();
+
+                 };
+        </script>
     </body>
-</html>
+</html> 
